@@ -1,0 +1,207 @@
+
+
+/*HOME*/
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 0.9rem;
+    font-style: normal;
+}
+
+/*네비게이션*/
+
+/* 네비게이션바 기본 스타일 */
+.custom-navbar {
+    background-color: rgba(249, 249, 249, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 네비게이션 링크 기본 스타일 */
+.custom-navbar .navbar-nav .custom-link {
+    color: #333333 !important;
+    margin-right: 1px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+/* 호버 스타일 */
+.custom-navbar .navbar-nav .custom-link:hover {
+    color: #556BFF !important;
+    font-weight: 1000;
+}
+
+/* 언더라인 효과 */
+.custom-navbar .navbar-nav .custom-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #556BFF;
+    transition: width 0.3s ease;
+}
+
+.custom-navbar .navbar-nav .custom-link:hover::after {
+    width: 100%;
+}
+
+/* 토글러 스타일 */
+.custom-navbar .navbar-toggler {
+    border-color: #8494ff;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23333333' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/*헤더*/
+.expanded-header {
+    height: 100vh; /* 전체 화면 높이 */
+    background-color: #556BFF; /* 배경색을 #556BFF로 설정 */
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+
+.header-il {
+    width: 100%; /* 이미지가 헤더 크기에 비례 */
+    height: auto; /* 비율 유지 */
+    max-height: 100%; /* 헤더 높이를 넘지 않도록 제한 */
+}
+
+/*홈화면*/
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
+.selection-box {
+    box-shadow: 0 0 4px rgba(84, 98, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.selection-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(54, 71, 255, 0.318);
+}
+
+h1, h2 {
+    color: #333333;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+h3 {
+    font-weight: 600;
+    color: #333333;
+}
+
+.diet-title {
+    font-family: 'Pretendard';
+    font-weight: 100 !important;
+}
+
+.diet-subtitle {
+    font-family: 'Pretendard';
+    font-weight: 700 !important;
+}
+
+.title-sm {
+    font-size: 1.4rem;  /* 원하는 크기로 조절 */
+    color: #556BFF;
+    margin
+    : 30px;
+}
+
+.selection-box {
+    background-color: #F5F6FF;
+    height: 100px;
+    margin-left: -30px;
+}
+
+.icon-custom-color {
+    color: #556BFF;
+}
+
+.hover-card {
+    background-color: #F5F6FF;
+    transition: all 0.3s ease;
+    height: 360px; /* 모든 카드의 높이를 동일하게 설정 */
+  }
+  
+  .hover-card:hover {
+    background-color: #D9DEFF;  /* 더 진한 색상으로 변경 */
+    transform: scale(1.05);     /* 크기 확대 효과 */
+    box-shadow: 0 10px 20px rgba(85, 107, 255, 0.2);  /* 그림자 효과 추가 */
+  }
+  
+  .card-title {
+    color: #333;
+    margin-top: 20px;  /* 텍스트 위치 통일 */
+    height: 30px;      /* 텍스트 높이 고정 */
+    line-height: 30px; /* 세로 중앙 정렬 */
+  }
+  
+  .card-img-wrapper {
+    height: 240px;     /* 이미지 컨테이너 높이 고정 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bg-light {
+    background-color: #FAFBFF !important;
+  }
+
+  .footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.footer .attribution {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer a {
+    color: #556BFF;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.image-attribution {
+    color: #adb5bd; /* 더 연한 회색으로 변경 */
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.image-attribution a {
+    color: #adb5bd; /* 링크 색상도 동일하게 변경 */
+    text-decoration: none;
+}
+
+.image-attribution a:hover {
+    color: #868e96; /* 호버 시 약간 진해지도록 */
+    text-decoration: underline;
+}

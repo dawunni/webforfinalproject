@@ -1,0 +1,339 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* 폰트 설정 */
+body {
+    font-family: 'Pretendard';
+    font-size: 0.9rem;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 최상위 배경색 설정 */
+html, body {
+    background-color: #556BFF !important;
+}
+
+/* section 배경색 제거 */
+.content, .habit-section {
+    background-color: transparent;
+}
+
+/* 그리드 아이템 색상 설정 - 더 구체적인 선택자 사용 */
+.grid--effect-altair .grid__item--c1, 
+.grid--effect-altair .grid__item--c2, 
+.grid--effect-altair .grid__item--c3 {
+    color: #556BFF !important;
+}
+
+/* 개별 색상 설정 */
+.grid--effect-altair .grid__item--c1 { color: #2941FF !important; }
+.grid--effect-altair .grid__item--c2 { color: #2941FF !important; }
+.grid--effect-altair .grid__item--c3 { color: #2941FF !important; }
+/* 기존 CSS 유지하면서 네비게이션과 타이틀 스타일 추가 */
+.custom-navbar {
+    background-color: rgba(249, 249, 249, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-nav .custom-link {
+    color: #333333 !important;
+    margin-right: 1px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.custom-navbar .navbar-nav .custom-link:hover,
+.custom-navbar .navbar-nav .custom-link.active {
+    color: #556BFF !important;
+    font-weight: 1000;
+}
+
+.custom-navbar .navbar-nav .custom-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #556BFF;
+    transition: width 0.3s ease;
+}
+
+.custom-navbar .navbar-nav .custom-link:hover::after,
+.custom-navbar .navbar-nav .custom-link.active::after {
+    width: 100%;
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: #8494ff;
+}
+
+/* 타이틀 스타일 수정 */
+.content__title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    color: #333; /* 기존 색상에서 변경 */
+}
+
+/* 기존 content 영역 패딩 조정 */
+.content {
+    padding-top: 80px; /* 네비게이션바 높이만큼 패딩 추가 */
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 0.9rem;
+}
+.habit-section {
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.habit-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.content__title {
+    font-size: 0.85em;
+    position: absolute;
+    top: 18%;
+    left: 2em;
+    width: 5em;
+    margin: 0.75em 0;
+    color: #ffffff;
+}
+
+.grid {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 7em;
+    perspective: 800px;
+    perspective-origin: 50% -50%;
+}
+
+
+.grid__item {
+    position: relative;
+    display: block;
+    text-decoration: none;  
+    flex: 0 0 calc(33.333% - 4vw); /* 3개씩 배치되도록 너비 설정 */
+    width: 250px;
+    margin: 1.5em 2vw;
+    cursor: default;
+    transform-style: preserve-3d;
+    color: initial;
+}
+
+.grid__item-title {
+    font-size: 1.15em;
+    width: 100%;
+    margin: 1em 0;
+    text-align: left;
+    color: #fff !important; /* 우선순위를 높이기 위해 !important 추가 */
+}
+
+/* 또는 더 구체적인 선택자 사용 */
+.grid__item .grid__item-caption .grid__item-title {
+    color: #ffffff;
+}
+
+.stack {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+
+.stack__deco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: currentColor;
+    transform-origin: 50% 100%;
+}
+
+.stack__deco:first-child { opacity: 0.2; }
+.stack__deco:nth-child(2) { opacity: 0.4; }
+.stack__deco:nth-child(3) { opacity: 0.6; }
+.stack__deco:nth-child(4) { opacity: 0.8; }
+
+.stack__figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-origin: 50% 100%;
+}
+
+.stack__img {
+    position: relative;
+    display: block;
+    flex: none;
+}
+
+.grid__item-caption {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.grid__item-title {
+    font-size: 1.15em;
+    width: 100%;
+    margin: 1em 0;
+    text-align: left;
+    color: #fff;
+}
+
+.column {
+    width: 50%;
+    padding: 0 0.5em;
+    opacity: 1;
+}
+
+.column--left {
+    text-align: right;
+}
+
+.column--right {
+    text-align: left;
+}
+
+.column__text {
+    font-size: 0.85em;
+    display: block;
+    color: #fff;
+}
+
+.column--left .column__text {
+    font-weight: bold;
+}
+
+.column--right .column__text {
+    color: #ffffff;
+}
+
+.stack__img {
+    width: 370px;
+}

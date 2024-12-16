@@ -1,0 +1,410 @@
+/* 폰트 설정 */
+body {
+    font-family: 'Pretendard';
+    font-size: 0.9rem;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+/* 네비게이션 */
+.custom-navbar {
+    background-color: rgba(249, 249, 249, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-nav .custom-link {
+    color: #333333 !important;
+    margin-right: 1px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.custom-navbar .navbar-nav .custom-link:hover,
+.custom-navbar .navbar-nav .custom-link.active {
+    color: #556BFF !important;
+    font-weight: 1000;
+}
+
+.custom-navbar .navbar-nav .custom-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #556BFF;
+    transition: width 0.3s ease;
+}
+
+.custom-navbar .navbar-nav .custom-link:hover::after,
+.custom-navbar .navbar-nav .custom-link.active::after {
+    width: 100%;
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: #8494ff;
+}
+
+/* 메인 섹션 */
+.habit-section {
+    min-height: 100vh;
+    background-color: #FAFBFF;
+    padding-top: 10px;
+}
+
+.habit-title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+/* 카드 리스트 */
+.habit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.habit-item {
+    width: 100%;
+    height: 200px;
+    background: white;
+    position: relative;
+    cursor: pointer;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+/* 화살표 아이콘 */
+.circle-arrow {
+    width: 60px;
+    height: 60px;
+    background-color: #556BFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.circle-arrow.left { margin-right: 2rem; }
+.circle-arrow.right { margin-left: 2rem; }
+.circle-arrow i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* 카드 내용 */
+.habit-item h5 {
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    max-width: 40%;
+}
+
+.habit-img {
+    position: absolute;
+    max-width: 150px;
+    height: auto;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 오른쪽 정렬 카드 */
+.habit-item.content-right {
+    flex-direction: row-reverse;
+}
+
+.habit-item.content-right .habit-img {
+    right: auto;
+    left: 2rem;
+}
+
+/* 호버 효과 */
+.habit-item:hover {
+    background-color: #556BFF;
+}
+
+.habit-item:hover .circle-arrow {
+    background-color: white;
+}
+
+.habit-item:hover .circle-arrow i {
+    color: #556BFF;
+}
+
+.habit-item:hover h5 {
+    color: white;
+}
+
+.img-fluid {
+    width: 100%;
+    max-width: 400px;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* 모달 */
+.modal-dialog {
+    max-width: 800px;
+    margin: 1.75rem auto;
+}
+
+.modal-content {
+    background: #FAFBFF;
+    border: none;
+    border-radius: 20px;
+    height: 700px;
+}
+
+.modal-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+/* 설명 컨테이너 스타일 */
+.description-container {
+    width: 100%;
+    margin-top: auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.meal-details {
+    text-align: left;
+}
+
+.meal-details h6 {
+    color: #556BFF;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.meal-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.5rem 0;
+}
+
+.meal-details ul li {
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.meal-details ul li strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* 이미지 컨테이너 높이 조정 */
+.image-container {
+    flex: 0 0 auto;
+    margin-bottom: 1rem;
+}
+
+/* 스크롤바 스타일링 */
+
+
+.content-wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content-wrapper::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.content-wrapper::-webkit-scrollbar-thumb {
+    background-color: #556BFF;
+    border-radius: 3px;
+}
+.content-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    overflow-y: auto;
+}
+
+/* 모달 콘텐츠 */
+.meal-content,
+.diet-content,
+.blueberry-content,
+.drink-content {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.meal-content.active,
+.diet-content.active,
+.blueberry-content.active,
+.drink-content.active {
+    display: block;
+}
+
+.meal-content h5 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.modal-body h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* 모달 네비게이션 버튼 */
+.modal-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #556BFF;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.modal-nav-btn.prev {
+    left: 0.5rem;
+}
+
+.modal-nav-btn.next {
+    right: 0.5rem;
+}
+
+.modal-nav-btn:hover {
+    background-color: #4054CC;
+}
+
+.meal-exp {
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.footer .attribution {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer a {
+    color: #556BFF;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.image-wrapper {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.image-wrapper .habit-img {
+    position: static;
+    transform: none;
+}
+
+.image-wrapper .image-attribution {
+    color: #adb5bd;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+}
+
+.image-wrapper .image-attribution a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.image-wrapper .image-attribution a:hover {
+    text-decoration: underline;
+}
+
+/* content-right 클래스가 있을 때 위치 조정 */
+.habit-item.content-right .image-wrapper {
+    right: auto;
+    left: 2rem;
+}
+
